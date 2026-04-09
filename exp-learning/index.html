@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pawfound Shelter — Find Your Forever Friend</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shelter-adoptions.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <div class="logo-paw">🐾</div>
+    Pawfound
+  </div>
+  <span class="header-tag">Adoption Centre</span>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Open for adoption</p>
+    <h1>Find your <em>forever</em><br>companion here</h1>
+    <p>Every pet in our shelter deserves a warm home and a loving family. Browse available animals and take the first step toward an unforgettable bond.</p>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num" id="stat-total">12</div>
+        <div class="stat-lbl">Pets available</div>
+      </div>
+      <div>
+        <div class="stat-num">230+</div>
+        <div class="stat-lbl">Adopted this year</div>
+      </div>
+      <div>
+        <div class="stat-num">100%</div>
+        <div class="stat-lbl">Vaccinated & healthy</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- Filters -->
+  <div class="filter-section">
+    <div class="filter-group">
+      <button class="filter-btn active" data-filter="all">All pets</button>
+      <button class="filter-btn dog" data-filter="dog">Dogs</button>
+      <button class="filter-btn cat" data-filter="cat">Cats</button>
+      <button class="filter-btn rabbit" data-filter="rabbit">Rabbits</button>
+    </div>
+    <p class="result-count"><span id="count">12</span> pets found</p>
+  </div>
+
+  <!-- Grid -->
+  <div class="grid" id="grid">
+    <div class="empty-state" id="empty">
+      <div class="empty-icon">🐾</div>
+      <p>No pets found for this filter.</p>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>Pawfound Animal Shelter &mdash; Open Mon–Sat 9am to 6pm &mdash; <a href="#">contact@pawfound.org</a></p>
+</footer>
+
+<script src="shelter-adoptions.js"></script>
+</body>
+</html>
